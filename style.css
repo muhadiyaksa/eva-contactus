@@ -311,8 +311,8 @@ body {
 }
 
 .formSection .card-form {
-  box-shadow: -10px -10px 25px #f1f8ff, 10px 10px 15px rgba(0, 0, 0, 0.1);
-  /* box-shadow: 13px 14px 21px rgba(0, 0, 0, 0.5); */
+  /* box-shadow: -10px -10px 25px #f1f8ff, 10px 10px 15px rgba(0, 0, 0, 0.1); */
+  box-shadow: 5px 5px 25px rgba(117, 117, 117, 0.1);
   transition: 2s;
   background-color: white;
   border-radius: 20px;
