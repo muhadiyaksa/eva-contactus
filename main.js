@@ -1,4 +1,7 @@
 // NAVBAR
+if (window.matchMedia("(max-width: 992px)").matches) {
+  $("#nav li.dropdown>a").attr("data-bs-toggle", "dropdown");
+}
 
 $(document).ready(function () {
   var $win = $(window);
@@ -55,6 +58,21 @@ if (window.matchMedia("(min-width: 992px)").matches) {
     toggleActions: "play none none none",
     scrub: 1,
     // markers: true,
+  });
+
+  const tlContact = gsap.timeline();
+  tlContact
+    .fromTo(".contactus .judul h1", { opacity: 0 }, { opacity: 1, duration: 2 })
+    .fromTo(".contactus .judul p", { opacity: 0 }, { opacity: 1, duration: 2 })
+    .fromTo(".contactus .contact-item", { opacity: 0 }, { opacity: 1, duration: 2 });
+
+  ScrollTrigger.create({
+    animation: tlContact,
+    trigger: ".contactus",
+    start: "top center",
+    end: "top center",
+    scrub: 2,
+    // markers: true
   });
 }
 
