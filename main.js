@@ -74,6 +74,44 @@ if (window.matchMedia("(min-width: 992px)").matches) {
     scrub: 2,
     // markers: true
   });
+
+  gsap.to(".formSection", {
+    yPercent: -40,
+    scrollTrigger: {
+      scrub: 1,
+      trigger: "html",
+      start: "top top",
+      // markers: true,
+    },
+  });
+  gsap.to(".contactus", {
+    yPercent: -80,
+    scrollTrigger: {
+      scrub: 1,
+      trigger: "html",
+      start: "top top",
+      // markers: true,
+    },
+  });
+  gsap.to("#section4", {
+    yPercent: -120,
+    scrollTrigger: {
+      scrub: 1,
+      trigger: "html",
+      start: "top top",
+      // markers: true,
+    },
+  });
+
+  gsap.to("#joinnow", {
+    yPercent: -180,
+    scrollTrigger: {
+      scrub: 1,
+      trigger: "html",
+      start: "top top",
+      // markers: true,
+    },
+  });
 }
 
 // -------------------------------------------------------------------------------------------------------------
@@ -97,11 +135,11 @@ textCutter(cardText);
 if (window.matchMedia("(min-width: 992px)").matches) {
   const tl3 = gsap.timeline();
   tl3
-    .fromTo("#anim1", { opacity: 0, scale: 1.3, duration: 0.3 }, { opacity: 1, scale: 1, duration: 0.5 })
-    .fromTo("#anim1", { y: 200 }, { y: 0, duration: 0.6, ease: "power2.inOut" })
-    .from(".anim2", { autoAlpha: 0, duration: 0.5, y: -5 })
-    .from(".anim3", { autoAlpha: 0, duration: 0.4, y: 30 })
-    .fromTo(".slider", { autoAlpha: 0 }, { autoAlpha: 1 });
+    .fromTo("#joinnow #animJoinOne", { opacity: 0, scale: 1.3, duration: 0.3 }, { opacity: 1, scale: 1, duration: 0.5 })
+    .fromTo("#joinnow #animJoinOne", { y: 200 }, { y: 0, duration: 0.6, ease: "power2.inOut" })
+    .from("#joinnow .animJoinTwo", { autoAlpha: 0, duration: 0.5, y: -5 })
+    .from("#joinnow .animJoinThree", { autoAlpha: 0, duration: 0.4, y: 30 })
+    .fromTo("joinnow .slider", { autoAlpha: 0 }, { autoAlpha: 1 });
 
   ScrollTrigger.create({
     animation: tl3,
