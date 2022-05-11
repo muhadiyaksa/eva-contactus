@@ -834,7 +834,9 @@
 /* SECTION FLIP CARD  */
 
 #flip-card {
-  height: 100vh;
+  min-height: 110vh;
+  /* height: 100vh; */
+  /* min-width: 100vw; */
   z-index: 2; 
   position: relative; 
   background-color: #edf2f7;
@@ -925,7 +927,7 @@
   border-radius: 10px;
 }
 
-#section4 .solusiButton:hover {
+#flip-card .solusiButton:hover {
   background-color: #ffa600 !important;
 }
 
@@ -980,6 +982,9 @@
 
 /* media 992 for flip-card */
 @media (min-width: 992px){
+  #flip-card {
+    height: 110vh;
+  }
   #flip-card .row {
     display: flex;
   };
