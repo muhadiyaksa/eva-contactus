@@ -44,37 +44,37 @@ document.querySelector("#nav .first-button").addEventListener("click", function 
 // ----------------------------------------------------------------------------------------------------------
 // FORM SECTION
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-if (window.matchMedia("(min-width: 992px)").matches) {
-  const tl5 = gsap.timeline();
-  tl5.fromTo(".formSection .imageforForm", { y: 500 }, { y: 0 }).fromTo(".formSection .cardforForm", { x: 1000 }, { x: 0 }, "<");
+// if (window.matchMedia("(min-width: 992px)").matches) {
+//   const tl5 = gsap.timeline();
+//   tl5.fromTo(".formSection .imageforForm", { y: 500 }, { y: 0 }).fromTo(".formSection .cardforForm", { x: 1000 }, { x: 0 }, "<");
 
-  ScrollTrigger.create({
-    animation: tl5,
-    trigger: ".formSection",
-    start: "top center",
-    end: "top center",
-    toggleActions: "play none none none",
-    scrub: 1,
-    // markers: true,
-  });
+//   ScrollTrigger.create({
+//     animation: tl5,
+//     trigger: ".formSection",
+//     start: "top center",
+//     end: "top center",
+//     toggleActions: "play none none none",
+//     scrub: 1,
+//     // markers: true,
+//   });
 
-  const tlContact = gsap.timeline();
-  tlContact
-    .fromTo(".contactus .judul h1", { opacity: 0 }, { opacity: 1, duration: 2 })
-    .fromTo(".contactus .judul p", { opacity: 0 }, { opacity: 1, duration: 2 })
-    .fromTo(".contactus .contact-item", { opacity: 0 }, { opacity: 1, duration: 2 });
+//   const tlContact = gsap.timeline();
+//   tlContact
+//     .fromTo(".contactus .judul h1", { opacity: 0 }, { opacity: 1, duration: 2 })
+//     .fromTo(".contactus .judul p", { opacity: 0 }, { opacity: 1, duration: 2 })
+//     .fromTo(".contactus .contact-item", { opacity: 0 }, { opacity: 1, duration: 2 });
 
-  ScrollTrigger.create({
-    animation: tlContact,
-    trigger: ".contactus",
-    start: "top center",
-    end: "top center",
-    scrub: 2,
-    // markers: true
-  });
-}
+//   ScrollTrigger.create({
+//     animation: tlContact,
+//     trigger: ".contactus",
+//     start: "top center",
+//     end: "top center",
+//     scrub: 2,
+//     // markers: true
+//   });
+// }
 
 // -------------------------------------------------------------------------------------------------------------
 // BLOG SECTION
@@ -94,20 +94,20 @@ textCutter(cardText);
 // ------------------------------------------------------------------------------------------------------------
 // CLIENT SECTION
 
-if (window.matchMedia("(min-width: 992px)").matches) {
-  const tl3 = gsap.timeline();
-  tl3
-    .fromTo("#anim1", { opacity: 0, scale: 1.3, duration: 0.3 }, { opacity: 1, scale: 1, duration: 0.5 })
-    .fromTo("#anim1", { y: 200 }, { y: 0, duration: 0.6, ease: "power2.inOut" })
-    .from(".anim2", { autoAlpha: 0, duration: 0.5, y: -5 })
-    .from(".anim3", { autoAlpha: 0, duration: 0.4, y: 30 })
-    .fromTo(".slider", { autoAlpha: 0 }, { autoAlpha: 1 });
+// if (window.matchMedia("(min-width: 992px)").matches) {
+//   const tl3 = gsap.timeline();
+//   tl3
+//     .fromTo("#anim1", { opacity: 0, scale: 1.3, duration: 0.3 }, { opacity: 1, scale: 1, duration: 0.5 })
+//     .fromTo("#anim1", { y: 200 }, { y: 0, duration: 0.6, ease: "power2.inOut" })
+//     .from(".anim2", { autoAlpha: 0, duration: 0.5, y: -5 })
+//     .from(".anim3", { autoAlpha: 0, duration: 0.4, y: 30 })
+//     .fromTo(".slider", { autoAlpha: 0 }, { autoAlpha: 1 });
 
-  ScrollTrigger.create({
-    animation: tl3,
-    trigger: "#joinnow",
-    start: "0% 10%",
-    end: "90% center",
-    toggleActions: "play none none none",
-  });
-}
+//   ScrollTrigger.create({
+//     animation: tl3,
+//     trigger: "#joinnow",
+//     start: "0% 10%",
+//     end: "90% center",
+//     toggleActions: "play none none none",
+//   });
+// }
