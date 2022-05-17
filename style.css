@@ -963,17 +963,17 @@
 }
 
 #flip-card .card768 .icon-rec {
-  top: 120px;
+  top: 50%;
   left: 43%;
 }
 
 #flip-card .card768 .icon-essen {
-  top: 90px;
+  top: 40%;
   left: 43%;
 }
 
 #flip-card .card768 .icon-tm {
-  top: 100px;
+  top: 40%;
   left: 43%;
 }
 
@@ -997,17 +997,17 @@
 }
 
 #flip-card .card375 .icon-rec {
-  top: 170px;
+  top: 70%;
   left: 62%;
 }
 
 #flip-card .card375 .icon-essen {
-  top: 140px;
+  top: 67%;
   left: 20%;
 }
 
 #flip-card .card375 .icon-tm {
-  top: 148px;
+  top: 69%;
   left: 63%;
 }
 
@@ -1061,27 +1061,37 @@
   #flip-card {
     padding: 0 10px 0 10px;
   }
+  #flip-card .accordion375 .contentBox .content375 {
+    position: relative;
+    padding: 0 40px 0 40px;
+    margin-top: -40px;
+    transform: translateY(-10%);
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+  }
+
+  #flip-card .content-accordion-375 {
+    position: absolute;
+    top: 45%;
+    right: 50%;
+    transform: translate(49.4%,-50%);
+    min-width: 77.3%;
+}
 
   #flip-card .accordion375 .contentBox.active .content375 {
     height: 250px;
-    transform: translateY(-30%);
+    transform: translateY(-15%);
+    
   }
 
   #flip-card .content-accordion-375 {
     padding-top: 20px;
     padding: 50px 20px 10px 20px;
     background-color: var(--warna2);
-    height: 0;
+    /* height: 0; */
     border-radius: 0 0 20px 20px;
-  }
-
-  #flip-card .accordion375 .contentBox .content375 {
-    position: relative;
-    padding: 0 45px 0 45px;
-    height: 0;
-    overflow: hidden;
-    transition: 0.5s;
-    overflow-y: auto;
   }
   .content375 p {
     font-size: 12px;
@@ -1136,9 +1146,7 @@
     padding: 40px 20px 10px 20px;
   }
 
-  #flip-card .accordion768 .contentBox.active .content768 {
-    height: 200px;
-  }
+  
   #flip-card .accordion768 .contentBox .content768 {
     position: relative;
     /* padding: 0 60px 0 60px; */
