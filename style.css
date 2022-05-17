@@ -30,7 +30,7 @@
 }
 #nav .navbar-brand img {
   width: 120px;
-}
+}x
 #nav .nav-item {
   margin: 0px 35px;
 }
@@ -834,7 +834,7 @@
 /* SECTION FLIP CARD  */
 
 #flip-card {
-  min-height: 110vh;
+  /* min-height: 110vh; */
   /* height: 100vh; */
   /* min-width: 100vw; */
   padding-bottom: 150px;
@@ -1021,12 +1021,19 @@
 
 #flip-card .accordion768 .contentBox .content768 {
   position: relative;
-  padding: 0 60px 0 60px;
+  /* padding: 0 60px 0 60px; */
   transform: translateY(-20%);
   height: 0;
   overflow: hidden;
   transition: 0.5s;
   overflow-y: auto;
+}
+#flip-card .content-accordion-768 {
+  position: absolute;
+  top: 40%;
+  right: 50%;
+  transform: translate(50%,-50%);
+  max-width:100%;
 }
 .content768 h5 {
   font-size: 18px;
@@ -1067,13 +1074,19 @@
     border-radius: 0 0 20px 20px;
   }
 
-  #section4 .accordion375 .contentBox .content375 {
+  #flip-card .accordion375 .contentBox .content375 {
     position: relative;
     padding: 0 45px 0 45px;
     height: 0;
     overflow: hidden;
     transition: 0.5s;
     overflow-y: auto;
+  }
+  .content375 p {
+    font-size: 12px;
+  }
+  .content375 h5 {
+    font-size: 14px;
   }
 
   .content375 .btn-acc {
@@ -1132,7 +1145,7 @@
   }
 
   #flip-card .content-accordion-768 {
-    padding: 30px 20px 10px 20px;
+    padding: 55px 20px 10px 20px;
   }
 
   #flip-card .accordion768 .contentBox.active .content768 {
@@ -1140,8 +1153,8 @@
   }
   #flip-card .accordion768 .contentBox .content768 {
     position: relative;
-    padding: 0 60px 0 60px;
-    transform: translateY(-20%);
+    /* padding: 0 60px 0 60px; */
+    transform: translateY(-25%);
     height: 0;
     overflow: hidden;
     transition: 0.5s;
@@ -1149,18 +1162,18 @@
   }
 
   #flip-card .content-accordion-768 {
-    min-width: 80%;
+    min-width: 84%;
   }
 }
 
 /* media 992 for flip-card */
 @media screen and (min-width: 992px){
   #flip-card {
-    height: 110vh;
+    height: 600px;
   }
   #flip-card .row {
     display: flex;
-  };
+  }
    .card768, .card375 {
     display: none;
   }
@@ -1178,7 +1191,7 @@
     display: none;
   }
   #flip-card {
-    height: 100vh;
+    height: 800px;
   }
   #flip-card .row {
     left: 12px;
