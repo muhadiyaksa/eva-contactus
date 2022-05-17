@@ -1021,6 +1021,7 @@
 
 #flip-card .accordion768 .contentBox .content768 {
   position: relative;
+  min-width: 84%;
   /* padding: 0 60px 0 60px; */
   transform: translateY(-20%);
   height: 0;
@@ -1030,9 +1031,9 @@
 }
 #flip-card .content-accordion-768 {
   position: absolute;
-  top: 40%;
+  top: 50%;
   right: 50%;
-  transform: translate(50%,-50%);
+  transform: translate(50.4%,-50%);
   max-width:100%;
 }
 .content768 h5 {
@@ -1120,6 +1121,37 @@
     padding: 5px 30px 5px 30px;
     border-radius: 11px;
   }
+
+  #flip-card .accordion768 .contentBox.active .content768 {
+    height: 220px;
+  }
+
+  #flip-card .accordion-768 {
+    display: block;
+    transform: translate(2px, -40px);
+    padding: 0 60px 0 60px;
+  }
+
+  #flip-card .content-accordion-768 {
+    padding: 40px 20px 10px 20px;
+  }
+
+  #flip-card .accordion768 .contentBox.active .content768 {
+    height: 200px;
+  }
+  #flip-card .accordion768 .contentBox .content768 {
+    position: relative;
+    /* padding: 0 60px 0 60px; */
+    transform: translateY(-25%);
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+  }
+
+  #flip-card .content-accordion-768 {
+    min-width: 84%;
+  }
 }
 
 /* media 768 for flip-card */
@@ -1145,7 +1177,7 @@
   }
 
   #flip-card .content-accordion-768 {
-    padding: 55px 20px 10px 20px;
+    padding: 30px 20px 10px 20px;
   }
 
   #flip-card .accordion768 .contentBox.active .content768 {
@@ -1162,14 +1194,15 @@
   }
 
   #flip-card .content-accordion-768 {
-    min-width: 84%;
+    max-width: 84%;
   }
 }
 
 /* media 992 for flip-card */
 @media screen and (min-width: 992px){
   #flip-card {
-    height: 600px;
+    height: 800px;
+    
   }
   #flip-card .row {
     display: flex;
