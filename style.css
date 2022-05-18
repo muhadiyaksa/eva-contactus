@@ -1127,7 +1127,7 @@ border-radius: 11px;
 
   #flip-card .content-accordion-375 {
     position: absolute;
-    top: 45%;
+    top: 50%;
     right: 50%;
     transform: translate(49.4%,-50%);
     min-width: 76%;
