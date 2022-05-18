@@ -1262,7 +1262,7 @@ border-radius: 11px;
 /* media 992 for flip-card */
 @media screen and (min-width: 992px){
   #flip-card {
-    height: 800px;
+   padding-bottom: 150px;
     
   }
   #flip-card .row {
@@ -1284,11 +1284,15 @@ border-radius: 11px;
    .card768,  .card375 {
     display: none;
   }
-  #flip-card {
-    height: 800px;
-  }
+  /* #flip-card {
+    height: 940px;
+  } */
   #flip-card .row {
     left: 12px;
+  }
+  #flip-card .judul {
+    font-size: 56px !important;
+    letter-spacing: normal !important;
   }
   
   .back-judul {
