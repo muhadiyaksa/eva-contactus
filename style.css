@@ -1065,7 +1065,7 @@
 
 #flip-card .content-accordion-375 {
   position: absolute;
-  top: 45%;
+  top: 50%;
   right: 50%;
   transform: translate(49.4%,-50%);
   min-width: 77.3%;
@@ -1130,7 +1130,7 @@ border-radius: 11px;
     top: 45%;
     right: 50%;
     transform: translate(49.4%,-50%);
-    min-width: 77.3%;
+    min-width: 76%;
 }
 
   #flip-card .accordion375 .contentBox.active .content375 {
@@ -1211,7 +1211,7 @@ border-radius: 11px;
   }
 
   #flip-card .content-accordion-768 {
-    min-width: 84%;
+    min-width: 83%;
   }
 }
 
@@ -1255,7 +1255,7 @@ border-radius: 11px;
   }
 
   #flip-card .content-accordion-768 {
-    max-width: 84%;
+    max-width: 83%;
   }
 }
 
