@@ -428,7 +428,7 @@
 .formSection select,
 .formSection textarea {
   border: 1px solid #ededed;
-  background-color: #f7fafc;
+  background-color: white;
   color: #a0aec0;
   font-size: 12px;
   padding: 7px 10px;
@@ -436,6 +436,12 @@
 }
 .formSection input::placeholder {
   color: #a0aec0;
+}
+.formSection input:not([value=""]):not(:focus):invalid {
+  background-color: #f7fafc;
+}
+.formSection textarea:not([value=""]):not(:focus):invalid {
+  background-color: #f7fafc;
 }
 .formSection label {
   color: #2d3748;
