@@ -420,7 +420,10 @@
 .formSection .card-form h3:nth-child(1) span {
   color: #ffc42f;
 }
-
+.formSection input:-webkit-autofill,
+.formSection input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
 .formSection input,
 .formSection select,
 .formSection textarea {
