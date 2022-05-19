@@ -626,6 +626,11 @@
   font-weight: 700;
   padding: 11px 0px !important;
   border-radius: 7px;
+  transition: 0.5s;
+  border: none;
+}
+.contactus .contact-item .btn:hover {
+  background-color: #ffa600;
 }
 .contactus .row {
   column-gap: 37px;
@@ -1436,6 +1441,7 @@
   width: 240px;
   height: 40px;
   border: none;
+  transition: 0.5s;
 }
 
 .solusiButton i {
